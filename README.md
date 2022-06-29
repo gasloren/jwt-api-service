@@ -1,8 +1,8 @@
 # JWT Micro Service API
 
 ### Endpoints
-` /jwt/token/create `
-` /jwt/token/decode `
+` /jwt/token/create `\
+` /jwt/token/decode `\
 
 - jsonwebtoken library
 

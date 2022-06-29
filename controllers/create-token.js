@@ -2,13 +2,13 @@ const jwt = require('jsonwebtoken');
 
 // --------------------------------------------
 
-const createToken = (tokenData, expDays = 60) => {
+const createToken = (data, expDays = 60) => {
 
   try {
 
     const jwtSecret = process.env.JWT_SECRET;
 
-    const token = jwt.sign(tokenData, jwtSecret, { expiresIn: `${expDays} days` });
+    const token = jwt.sign(data, jwtSecret, { expiresIn: `${expDays} days` });
 
     return { token };
 

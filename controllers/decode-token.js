@@ -2,13 +2,13 @@ const jwt = require('jsonwebtoken');
 
 // --------------------------------------------
 
-const decodeToken = (tokenSign) => {
+const decodeToken = (token) => {
 
   try {
 
     const jwtSecret = process.env.JWT_SECRET;
 
-    const decoded = jwt.verify(tokenSign, jwtSecret);
+    const decoded = jwt.verify(token, jwtSecret);
 
     return { decoded };
 
