@@ -21,7 +21,7 @@ class Server {
 
   listen() {
     this.server.listen(this.port, () => {
-      console.log(`Boilerplate API listening on port ${this.port}`);
+      console.log(`Auth API listening on port ${this.port}`);
       // Here we send the ready signal to PM2
       // configure "wait_ready: true" on ecosystem.config.js
       // process.send('ready');

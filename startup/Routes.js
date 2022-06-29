@@ -1,11 +1,14 @@
-const NewRoute = require('../endpoints/NewRoute');
+
+const TokenCreate = require('../endpoints/TokenCreate');
+const TokenDecode = require('../endpoints/TokenDecode');
 
 // --------------------------------
 
 class Routes {
 
   constructor(server) {
-    this.newRoute = new NewRoute(server);
+    this.tokenCreate = new TokenCreate(server);
+    this.tokenDecode = new TokenDecode(server);
   }
 
 }

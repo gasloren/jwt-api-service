@@ -1,9 +1,11 @@
-# Auth API As A Service
+# JWT Micro Service API
 
-- Expose api endpoints authentication services.
+### Endpoints
+` /jwt/token/create `
+` /jwt/token/decode `
 
-- Using bcriptjs && jsonwebtoken libaries
+- jsonwebtoken library
 
-- Auth secret API key token will be required on incomming requests from localhost
-
-- Only direct local requests will be accepted.
+- only localhost requests will be accepted
+  
+- header api-key token is require
